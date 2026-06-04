@@ -24,6 +24,23 @@ PORT     STATE SERVICE REASON
 Nmap done: 1 IP address (1 host up) scanned in 13.41 seconds
 ```
 
+```
+oxdf@hacky$ sudo nmap -p 80,5985 -sCV 10.129.67.15
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-05-15 20:26 UTC
+Nmap scan report for 10.129.67.15
+Host is up (0.020s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    nginx
+|_http-title: Did not follow redirect to http://monitorsfour.htb/
+5985/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.67 seconds
+```
 
 ### Website (Port `80`)
 
