@@ -10,7 +10,19 @@ MonitorsFour продолжает серию Monitors, на этот раз на
 
 
 ```
+nmap обнаруживает два открытых TCP-порта: HTTP (80) и WinRM (5985):
 
+text
+oxdf@hacky$ sudo nmap -p- --min-rate 10000 --reason monitorsfour.htb
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-05-19 20:21 UTC
+Nmap scan report for monitorsfour.htb (10.129.67.15)
+Host is up, received echo-reply ttl 127 (0.021s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE REASON
+80/tcp   open  http    syn-ack ttl 127
+5985/tcp open  wsman   syn-ack ttl 127
+
+Nmap done: 1 IP address (1 host up) scanned in 13.41 seconds
 ```
 
 
