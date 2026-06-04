@@ -12,7 +12,6 @@ MonitorsFour продолжает серию Monitors, на этот раз на
 ```
 nmap обнаруживает два открытых TCP-порта: HTTP (80) и WinRM (5985):
 
-text
 oxdf@hacky$ sudo nmap -p- --min-rate 10000 --reason monitorsfour.htb
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-05-19 20:21 UTC
 Nmap scan report for monitorsfour.htb (10.129.67.15)
