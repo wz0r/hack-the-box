@@ -41,7 +41,13 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 11.67 seconds
 ```
-
+Это Windows-хост, где HTTP-сервером является Nginx.
+Оба порта показывают TTL=127, что соответствует ожидаемому TTL для Windows на расстоянии в один хоп.
+netexec может выдать домен и имя хоста через WinRM:
+```
+oxdf@hacky$ netexec winrm 10.129.67.15
+WINRM       10.129.67.15    5985   MONITORSFOUR     [*] Windows 11 / Server 2025 Build 26100 (name:MONITORSFOUR) (domain:MonitorsFour) 
+```
 ### Website (Port `80`)
 
 
